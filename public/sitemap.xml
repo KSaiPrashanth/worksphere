@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
         <url>
-          <loc>https://bookworksphere.vercel.com/</loc>
-          <lastmod>2025-02-14T11:43:12.996Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/</loc>
+          <lastmod>2025-02-14T12:22:37.700Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.com/rooms</loc>
-          <lastmod>2025-02-14T11:43:12.997Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/rooms</loc>
+          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.com/add-room</loc>
-          <lastmod>2025-02-14T11:43:12.997Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/add-room</loc>
+          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.com/my-rooms</loc>
-          <lastmod>2025-02-14T11:43:12.997Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/my-rooms</loc>
+          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.com/bookings</loc>
-          <lastmod>2025-02-14T11:43:12.997Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/bookings</loc>
+          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>

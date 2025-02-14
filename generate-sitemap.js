@@ -9,7 +9,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .map((page) => {
       return `
         <url>
-          <loc>https://bookworksphere.vercel.com${page}</loc>
+          <loc>https://bookworksphere.vercel.app${page}</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
