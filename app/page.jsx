@@ -182,9 +182,7 @@ export default function Home() {
                   className="bg-blue-100 p-6 rounded-lg border border-blue-400 shadow-lg text-center hover:shadow-blue-400"
                 >
                   {item.icon}
-                  <h3 className="text-xl font-semibold text-blue-600 mt-4">
-                    {item.step}
-                  </h3>
+                  <h3 className="text-xl font-semibold mt-4">{item.step}</h3>
                   <p className="mt-2 text-gray-600">{item.description}</p>
                 </div>
               ))}
