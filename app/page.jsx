@@ -28,7 +28,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="py-12 max-h-screen border-dashed border-x-2 border-gray-300 border-b-2 bg-blue-100">
+        <section className="py-12 max-h-screen border-dashed border-x-2 border-gray-300 border-b-2 bg-blue-50">
           <div className="container mx-auto my-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-gray-800">
               Effortless Booking & Management
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-12 bg-blue-200 border-dashed border-x-2 border-gray-300">
+        <section className="py-12 bg-gray-100 border border-x-2 border-gray-300">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold text-center text-gray-800">
               Why Choose WorkSphere?
@@ -112,7 +112,7 @@ export default function Home() {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-gray-100 p-6 rounded-lg shadow-lg text-center hover:shadow-blue-400"
+                  className="bg-gray-100 p-6 rounded-lg border border-gray-400 shadow-lg text-center hover:shadow-blue-400"
                 >
                   {feature.icon}
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">
@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section className="py-12 border-dashed border-2 border-gray-400 bg-blue-100">
+        <section className="py-12  border border-gray-400 bg-blue-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold text-center text-gray-800">
               How It Works
@@ -179,7 +179,7 @@ export default function Home() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-gray-100 p-6 rounded-lg shadow-lg text-center hover:shadow-blue-400"
+                  className="bg-blue-100 p-6 rounded-lg border border-blue-400 shadow-lg text-center hover:shadow-blue-400"
                 >
                   {item.icon}
                   <h3 className="text-xl font-semibold text-blue-600 mt-4">
@@ -193,7 +193,7 @@ export default function Home() {
         </section>
 
         {/* Audience Section */}
-        <section className="py-12 bg-blue-200 border-dashed border-x-2 border-gray-300">
+        <section className="py-12 bg-gray-100 border-dashed border-x-2 border-gray-300">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold text-center text-gray-800">
               Who Is WorkSphere For?
@@ -247,7 +247,7 @@ export default function Home() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-blue-100 p-6 rounded-lg shadow-lg text-center hover:shadow-blue-400"
+                  className="bg-gray-100 p-6 rounded-lg border border-gray-400 shadow-lg text-center hover:shadow-blue-400"
                 >
                   {item.icon}
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">
