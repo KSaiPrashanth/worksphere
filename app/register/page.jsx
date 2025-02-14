@@ -32,7 +32,7 @@ const RegisterPage = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="bg-gray-300 shadow-lg rounded-lg p-6 w-full max-w-sm mt-4">
+      <div className="bg-gray-100 border border-gray-400 shadow-sm shadow-gray-400 rounded-lg p-6 w-full max-w-sm mt-4">
         <form action={formAction}>
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
             Register
@@ -50,7 +50,7 @@ const RegisterPage = () => {
               id="name"
               name="name"
               placeholder="Full Name"
-              className="border rounded w-full py-2 px-3"
+              className="border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -67,7 +67,7 @@ const RegisterPage = () => {
               id="email"
               name="email"
               placeholder="Email address"
-              className="border rounded w-full py-2 px-3"
+              className="border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -84,7 +84,7 @@ const RegisterPage = () => {
               id="password"
               name="password"
               placeholder="Password"
-              className="border rounded w-full py-2 px-3"
+              className="border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -101,7 +101,7 @@ const RegisterPage = () => {
               id="confirm-password"
               name="confirm-password"
               placeholder="Password"
-              className="border rounded w-full py-2 px-3"
+              className="border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>

@@ -4,7 +4,7 @@ import DeleteRoomButton from "./DeleteRoomButton";
 
 const MyRoomCard = ({ room, index }) => {
   return (
-    <div className="bg-gray-300 shadow-md shadow-gray-400 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+    <div className="bg-gray-100 border border-gray-400 shadow-md shadow-gray-400 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
       <div className="flex flex-col gap-1">
         <h4 className="text-2xl font-semibold">
           {index}.{room.name}

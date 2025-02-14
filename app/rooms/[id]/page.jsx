@@ -30,7 +30,7 @@ const page = async ({ params }) => {
   return (
     <>
       <Heading title={room.name} />
-      <div className="bg-gray-300 shadow-sm shadow-gray-500 rounded-lg p-6 text-gray-700">
+      <div className="bg-gray-100 shadow-sm shadow-gray-400 rounded-lg p-4 text-gray-700">
         <Link
           href="/rooms"
           className="flex items-center text-gray-600 hover:text-gray-800 mb-4"
@@ -46,7 +46,7 @@ const page = async ({ params }) => {
             height={100}
             alt={room.name}
             draggable="false"
-            className="w-full sm:w-1/3 h-64 object-fill rounded-lg"
+            className="w-full sm:w-1/2 h-auto object-cover rounded-lg"
           />
 
           <div className="mt-4 sm:mt-0 sm:flex-1">

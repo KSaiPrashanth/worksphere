@@ -13,9 +13,7 @@ const RoomCard = ({ room }) => {
   const imageSrc = room.image ? imageUrl : "/images/no-image.png";
   return (
     <>
-      <div
-        className="bg-gray-300 text-black shadow-md shadow-gray-400 hover:shadow-blue-400 hover:shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center "
-      >
+      <div className="bg-gray-100 border border-gray-400 text-black shadow-md shadow-gray-400 hover:shadow-blue-400 hover:shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center ">
         <div className="flex flex-col sm:flex-row sm:space-x-4 w-full">
           <Image
             src={imageSrc}
@@ -23,11 +21,12 @@ const RoomCard = ({ room }) => {
             width={500}
             height={100}
             draggable="false"
-            className="w-full sm:w-64 sm:h-36 mb-3 sm:mb-0 object-fill rounded-lg"
+            className="w-full sm:w-2/5 sm:h-auto mb-3 sm:mb-0 object-cover rounded-lg"
           />
-          <div className="space-y-1 flex flex-col justify-between">
-            <h4 className="text-2xl font-bold">{room.name}</h4>
-            <div className="space-y-2">
+          <div className="space-y-1 flex flex-col justify-around">
+            <h4 className="text-2xl font-bold h-">{room.name}</h4>
+            <div className="space-y-4">
+              <p className="text-md text-gray-600">{room.description}</p>
               <p className="text-md text-gray-600">
                 <span className="font-semibold text-gray-800"> Address:</span>{" "}
                 {room.address}

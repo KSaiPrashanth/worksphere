@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-gray-300 border-b-2 border-white sticky top-0 z-50">
+      <header className="bg-gray-200 border-b-2 border-gray-400 sticky top-0 z-50">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-semibold">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center justify-between">
@@ -143,7 +143,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-gray-300 px-2 pb-3 pt-2 sm:px-3 border-y border-gray-700">
+          <div className="md:hidden bg-gray-200 px-2 pb-3 pt-2 sm:px-3 border-y border-gray-700">
             <Link
               href="/rooms"
               className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white "

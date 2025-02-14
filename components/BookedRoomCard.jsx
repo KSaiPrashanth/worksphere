@@ -64,7 +64,7 @@ const BookedRoomCard = ({ booking, index }) => {
   const isCheckInPassed = localCurrentTime >= checkInDate;
 
   return (
-    <div className="bg-gray-300 shadow-md shadow-gray-400 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+    <div className="bg-gray-100 border border-gray-400 shadow-md shadow-gray-400 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
       <div>
         <h4 className="text-2xl font-semibold">
           {index}.{room.name}
@@ -101,7 +101,7 @@ const BookedRoomCard = ({ booking, index }) => {
               className="text-red-400 bg-red-100 border-2 border-red-300 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center flex items-center justify-center gap-1 relative group"
             >
               <FcCancel />
-              Cancel 
+              Cancel
               <div className="absolute bottom-full mb-2 hidden group-hover:block bg-gray-700 text-white text-xs rounded py-1 px-2">
                 you can not cancel less than 24 hours before.
               </div>
