@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-gray-200 border-b-2 border-gray-400 sticky top-0 z-50">
+      <header className="bg-black border-b border-gray-400 sticky top-0 z-50">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-semibold">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center justify-between">
@@ -59,7 +59,7 @@ const Header = () => {
                 <div className="ml-10 flex items-center space-x-4">
                   <Link
                     href="/rooms"
-                    className="rounded-md px-3 py-2 text-md font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                    className="rounded-md px-3 py-2 text-md border-2 border-transparent font-medium hover:bg-gray-700 hover:text-white"
                   >
                     Rooms
                   </Link>
@@ -69,14 +69,14 @@ const Header = () => {
                     <>
                       <Link
                         href="/bookings"
-                        className="rounded-md px-3 py-2 text-md font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                        className="rounded-md px-3 py-2 text-md font-medium  hover:bg-gray-700 hover:text-white"
                       >
                         Bookings
                       </Link>
 
                       <Link
                         href="/rooms/add"
-                        className="rounded-md px-3 py-2 text-md font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                        className="rounded-md px-3 py-2 text-md font-medium  hover:bg-gray-700 hover:text-white"
                       >
                         Add Room
                       </Link>
@@ -94,13 +94,13 @@ const Header = () => {
                   <>
                     <Link
                       href="/login"
-                      className="hidden md:flex mr-3 text-blue-800 hover:text-blue-700 items-center gap-1 border-2 bg-blue-100 border-blue-700 px-3 py-2 rounded-md"
+                      className="hidden md:flex mr-3 text-blue-400 border-2 border-blue-400 items-center gap-1 hover:text-blue-500 hover:border-blue-500 px-3 py-2 rounded-md"
                     >
                       <FaSignInAlt className="inline" /> Login
                     </Link>
                     <Link
                       href="/register"
-                      className="hidden md:flex mr-3 text-green-100 hover:text-green-700 hover:bg-green-100 items-center gap-1 border-2 bg-green-700 border-green-700 px-3 py-2 rounded-md"
+                      className="hidden md:flex mr-3 text-green-400 border-2 border-green-400 items-center gap-1 x hover:text-green-500 hover:border-green-500 px-3 py-2 rounded-md"
                     >
                       <FaUser className="inline" /> Register
                     </Link>
@@ -111,7 +111,7 @@ const Header = () => {
                   <>
                     <Link
                       href="/rooms/my"
-                      className="hidden md:block mx-3 rounded-md px-3 text-gray-100 bg-gray-800 border py-2 border-gray-600
+                      className="hidden md:block mr-2 rounded-md px-3 text-gray-100 bg-gray-800 border py-2 border-gray-600
                       hover:text-gray-50
                       hover:bg-gray-700"
                     >
@@ -119,8 +119,8 @@ const Header = () => {
                     </Link>
                     <button
                       onClick={handleLogout}
-                      className="hidden md:block mx-3 rounded-md px-3 text-red-700 bg-red-100 border py-2 border-red-600 hover:text-red-600
-                      hover:bg-red-200"
+                      className="hidden md:block ml-2 rounded-md px-3 text-red-400 bg-[#171717 border py-2 border-red-400 hover:text-red-500
+                      hover:border-red-500"
                     >
                       <FaSignOutAlt className="inline mr-1" /> Sign Out
                     </button>
@@ -133,7 +133,7 @@ const Header = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-gray-800 focus:outline-none"
+                className="focus:outline-none"
               >
                 <FaBars className="h-6 w-6" />
               </button>
@@ -143,10 +143,10 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-gray-200 px-2 pb-3 pt-2 sm:px-3 border-y border-gray-700">
+          <div className="md:hidden bg-gray-950 px-2 pb-3 pt-2 sm:px-3 border-y border-gray-800">
             <Link
               href="/rooms"
-              className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white "
+              className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white "
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <FaBuilding />
@@ -157,7 +157,7 @@ const Header = () => {
               <>
                 <Link
                   href="/bookings"
-                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <FaSuitcase />
@@ -165,7 +165,7 @@ const Header = () => {
                 </Link>
                 <Link
                   href="/rooms/add"
-                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <FaKey />
@@ -173,7 +173,7 @@ const Header = () => {
                 </Link>
                 <Link
                   href="/rooms/my"
-                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <FaBuildingUser /> My Rooms
@@ -184,7 +184,7 @@ const Header = () => {
                     handleLogout();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-red-700 hover:text-white w-full hover:bg-red-700"
+                  className="flex items-center gap-1 rounded-md px-3 py-2 text-base font-medium text-red-500 hover:text-white w-full hover:bg-red-700"
                 >
                   <FaSignOutAlt />
                   Sign Out
@@ -196,14 +196,14 @@ const Header = () => {
               <>
                 <Link
                   href="/login"
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                  className="block rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <FaSignInAlt className="inline mr-1" /> Login
                 </Link>
                 <Link
                   href="/register"
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                  className="block rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <FaUser className="inline mr-1" /> Register

@@ -32,16 +32,16 @@ const RegisterPage = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="bg-gray-100 border border-gray-400 shadow-sm shadow-gray-400 rounded-lg p-6 w-full max-w-sm mt-4">
+      <div className="border border-gray-400 shadow-sm shadow-gray-400 rounded-lg p-6 w-full max-w-sm mt-4">
         <form action={formAction}>
-          <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
+          <h2 className="text-2xl font-bold text-center mb-6">
             Register
           </h2>
 
           <div className="mb-4">
             <label
               htmlFor="name"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Name
             </label>
@@ -50,7 +50,7 @@ const RegisterPage = () => {
               id="name"
               name="name"
               placeholder="Full Name"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -58,7 +58,7 @@ const RegisterPage = () => {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Email
             </label>
@@ -67,7 +67,7 @@ const RegisterPage = () => {
               id="email"
               name="email"
               placeholder="Email address"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -75,7 +75,7 @@ const RegisterPage = () => {
           <div className="mb-4">
             <label
               htmlFor="password"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Password
             </label>
@@ -84,7 +84,7 @@ const RegisterPage = () => {
               id="password"
               name="password"
               placeholder="Password"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -92,7 +92,7 @@ const RegisterPage = () => {
           <div className="mb-6">
             <label
               htmlFor="confirm-password"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Confirm Password
             </label>
@@ -101,7 +101,7 @@ const RegisterPage = () => {
               id="confirm-password"
               name="confirm-password"
               placeholder="Password"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               required
             />
           </div>
@@ -118,7 +118,7 @@ const RegisterPage = () => {
               Have an account?{" "}
               <Link
                 href="/login"
-                className="text-blue-700 hover:text-blue-800"
+                className="text-blue-400 hover:text-blue-500"
               >
                 Login
               </Link>

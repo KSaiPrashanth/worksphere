@@ -13,7 +13,7 @@ const RoomCard = ({ room }) => {
   const imageSrc = room.image ? imageUrl : "/images/no-image.png";
   return (
     <>
-      <div className="bg-gray-100 border border-gray-400 text-black shadow-md shadow-gray-400 hover:shadow-blue-400 hover:shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center ">
+      <div className="border border-gray-400 shadow-sm shadow-gray-400 hover:shadow-blue-400 hover:shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
         <div className="flex flex-col sm:flex-row sm:space-x-4 w-full">
           <Image
             src={imageSrc}
@@ -23,23 +23,23 @@ const RoomCard = ({ room }) => {
             draggable="false"
             className="w-full sm:w-2/5 sm:h-auto mb-3 sm:mb-0 object-cover rounded-lg"
           />
-          <div className="space-y-1 flex flex-col justify-around">
+          <div className="space-y-1 flex flex-col justify-around pr-1">
             <h4 className="text-2xl font-bold h-">{room.name}</h4>
             <div className="space-y-4">
-              <p className="text-md text-gray-600">{room.description}</p>
-              <p className="text-md text-gray-600">
-                <span className="font-semibold text-gray-800"> Address:</span>{" "}
+              <p className="text-md text-gray-400">{room.description}</p>
+              <p className="text-md text-gray-300">
+                <span className="font-semibold text-gray-300"> Address:</span>{" "}
                 {room.address}
               </p>
-              <p className="text-md text-gray-600">
-                <span className="font-semibold text-gray-800">
+              <p className="text-md text-gray-300">
+                <span className="font-semibold text-gray-300">
                   {" "}
                   Availability:{" "}
                 </span>
                 {room.availability}
               </p>
-              <p className="text-md text-gray-600">
-                <span className="font-semibold text-gray-800"> Price: </span>$
+              <p className="text-md text-gray-300">
+                <span className="font-semibold text-gray-300"> Price: </span>$
                 {room.price_per_hour}/hour
               </p>
             </div>
@@ -48,7 +48,7 @@ const RoomCard = ({ room }) => {
         <div className="flex flex-col sm:flex-row w-full sm:w-auto sm:space-x-2 mt-2 sm:mt-0">
           <Link
             href={`/rooms/${room.$id}`}
-            className="bg-blue-100 text-blue-700 px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:text-blue-600 border-2 border-blue-500 flex items-center justify-center gap-2"
+            className="bg-blue-800 border-2 border-blue-500 px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-blue-700 flex items-center justify-center gap-2"
           >
             <FaEye />
             View

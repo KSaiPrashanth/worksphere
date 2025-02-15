@@ -22,7 +22,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://bookworksphere.vercel.app/images/website-preview.png",
+        url: "https://bookworksphere.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "WorkSphere",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "WorkSphere: Effortless Meeting and Workspace Booking",
     description:
       "Easily book meeting rooms and workspaces with WorkSphere. Enjoy real-time availability, flexible scheduling, and seamless collaboration—all in one platform.",
-    image: "https://bookworksphere.vercel.app/images/website-preview.png",
+    image: "https://bookworksphere.vercel.app/images/og-image.png",
   },
 };
 

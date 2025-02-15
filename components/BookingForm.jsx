@@ -135,7 +135,7 @@ const BookingForm = ({ room }) => {
             <div>
               <label
                 htmlFor="check_in_date"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-100"
               >
                 Check-In Date
               </label>
@@ -143,7 +143,7 @@ const BookingForm = ({ room }) => {
                 type="date"
                 id="check_in_date"
                 name="check_in_date"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="custom-date bg-transparent mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
                 min={minDate}
                 max={maxDateFormatted}
@@ -154,7 +154,7 @@ const BookingForm = ({ room }) => {
             <div>
               <label
                 htmlFor="check_in_time"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-100"
               >
                 Check-In Time
               </label>
@@ -162,7 +162,7 @@ const BookingForm = ({ room }) => {
                 type="time"
                 id="check_in_time"
                 name="check_in_time"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="custom-date bg-transparent mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
                 value={checkInTime}
                 onChange={handleCheckInTimeChange}
@@ -171,7 +171,7 @@ const BookingForm = ({ room }) => {
             <div>
               <label
                 htmlFor="check_out_date"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-100"
               >
                 Check-Out Date
               </label>
@@ -179,7 +179,7 @@ const BookingForm = ({ room }) => {
                 type="date"
                 id="check_out_date"
                 name="check_out_date"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="custom-date bg-transparent mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
                 min={checkInDate || minDate}
                 max={maxDateFormatted}
@@ -190,7 +190,7 @@ const BookingForm = ({ room }) => {
             <div>
               <label
                 htmlFor="check_out_time"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-100"
               >
                 Check-Out Time
               </label>
@@ -198,7 +198,7 @@ const BookingForm = ({ room }) => {
                 type="time"
                 id="check_out_time"
                 name="check_out_time"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="custom-date bg-transparent mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
                 value={checkOutTime}
                 onChange={handleCheckOutTimeChange}

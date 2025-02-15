@@ -30,10 +30,10 @@ const page = async ({ params }) => {
   return (
     <>
       <Heading title={room.name} />
-      <div className="bg-gray-100 shadow-sm shadow-gray-400 rounded-lg p-4 text-gray-700">
+      <div className="shadow-sm shadow-gray-400 rounded-lg p-4 border border-gray-400">
         <Link
           href="/rooms"
-          className="flex items-center text-gray-600 hover:text-gray-800 mb-4"
+          className="flex items-center text-gray-400 hover:text-gray-300 mb-4"
         >
           <FaChevronLeft />
           <span className="ml-1">Back to Rooms</span>
@@ -50,26 +50,26 @@ const page = async ({ params }) => {
           />
 
           <div className="mt-4 sm:mt-0 sm:flex-1">
-            <p className="text-gray-600 mb-4 text-xl">{room.description}</p>
+            <p className="text-gray-200 mb-4 text-xl">{room.description}</p>
 
             <ul className="space-y-2">
               <li>
-                <span className="font-semibold text-gray-800">Size: </span>{" "}
+                <span className="font-semibold text-gray-100">Size: </span>{" "}
                 {room.sqft}
                 sq ft
               </li>
               <li>
-                <span className="font-semibold text-gray-800">
+                <span className="font-semibold text-gray-100">
                   Availability:{" "}
                 </span>
                 {room.availability}
               </li>
               <li>
-                <span className="font-semibold text-gray-800">Price: </span>$
+                <span className="font-semibold text-gray-100">Price: </span>$
                 {room.price_per_hour}/hour
               </li>
               <li>
-                <span className="font-semibold text-gray-800">Address: </span>
+                <span className="font-semibold text-gray-100">Address: </span>
                 {room.address}
               </li>
 
@@ -77,7 +77,7 @@ const page = async ({ params }) => {
                 <Link
                   href={mapUrl}
                   rel="noopener noreferrer"
-                  className="font-semibold text-green-800 hover:text-blue-800 inline-flex items-center gap-2"
+                  className="font-semibold border-2 border-green-500 px-3 py-2 rounded-md bg-green-800 hover:bg-green-900 inline-flex items-center gap-2 mt-2"
                   target="_blank"
                 >
                   Locate on Map

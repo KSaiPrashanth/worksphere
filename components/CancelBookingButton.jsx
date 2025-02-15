@@ -26,7 +26,7 @@ const CancelBookingButton = ({ bookingId }) => {
   return (
     <button
       onClick={handleCancelClick}
-      className="text-red-700 bg-red-100 border-2 border-red-400 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-red-200 flex items-center justify-center gap-1"
+      className="text-red-400 border-2 border-red-400 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center hover:text-red-500 hover:border-red-500 flex items-center justify-center gap-1"
     >
       <FcCancel />
       Cancel

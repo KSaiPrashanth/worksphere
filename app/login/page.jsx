@@ -35,16 +35,16 @@ const LoginPage = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="bg-gray-100 border border-gray-400 shadow-sm shadow-gray-400 rounded-lg p-6 w-full max-w-sm mt-4">
+      <div className="border border-gray-400 shadow-sm shadow-gray-400 rounded-lg p-6 w-full max-w-sm mt-4">
         <form action={formAction}>
-          <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
+          <h2 className="text-2xl font-bold text-center mb-6">
             Login
           </h2>
 
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Email
             </label>
@@ -52,7 +52,7 @@ const LoginPage = () => {
               type="email"
               id="email"
               name="email"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               autoComplete="email"
               placeholder="Email address"
               required
@@ -62,7 +62,7 @@ const LoginPage = () => {
           <div className="mb-6">
             <label
               htmlFor="password"
-              className="block text-gray-700 font-bold mb-2"
+              className="block  font-bold mb-2"
             >
               Password
             </label>
@@ -71,7 +71,7 @@ const LoginPage = () => {
               id="password"
               name="password"
               placeholder="Password"
-              className="border border-gray-400 rounded w-full py-2 px-3"
+              className="bg-transparent border border-gray-400 rounded w-full py-2 px-3"
               autoComplete="password"
               required
             />
@@ -80,7 +80,7 @@ const LoginPage = () => {
           <div className="flex flex-col gap-5">
             <button
               type="submit"
-              className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-gray-700"
+              className="bg-blue-700 px-4 py-2 rounded hover:bg-gray-700"
             >
               Login
             </button>
@@ -89,7 +89,7 @@ const LoginPage = () => {
               No account?{" "}
               <Link
                 href="/register"
-                className="text-blue-700 hover:text-blue-800"
+                className="text-blue-400 hover:text-blue-500"
               >
                 Register
               </Link>

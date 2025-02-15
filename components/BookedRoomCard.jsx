@@ -64,28 +64,34 @@ const BookedRoomCard = ({ booking, index }) => {
   const isCheckInPassed = localCurrentTime >= checkInDate;
 
   return (
-    <div className="bg-gray-100 border border-gray-400 shadow-md shadow-gray-400 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
-      <div>
+    <div className="border border-gray-400 shadow-sm rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+      <div className="space-y-1">
         <h4 className="text-2xl font-semibold">
-          {index}.{room.name}
+          {index}. {room.name}
         </h4>
-        <p className="text-sm text-gray-600">
-          <strong> Booking Id:</strong> {booking.$id}
-        </p>
-        <p className="text-sm text-gray-600">
-          <strong>Check In:</strong> {formatDate(booking.check_in)}
-        </p>
-        <p className="text-sm text-gray-600">
-          <strong>Check Out:</strong> {formatDate(booking.check_out)}
-        </p>
-        <p className="text-sm text-gray-600">
-          <strong>Total Price:</strong> ${totalPrice.toFixed(2)}
-        </p>
+        <div className="ml-5 text-gray-400">
+          <p className="text-sm">
+            <strong> Booking Id:</strong>{" "}
+            {booking.$id}
+          </p>
+          <p className="text-sm">
+            <strong>Check In:</strong>{" "}
+            {formatDate(booking.check_in)}
+          </p>
+          <p className="text-sm">
+            <strong>Check Out:</strong>{" "}
+            {formatDate(booking.check_out)}
+          </p>
+          <p className="text-sm">
+            <strong>Total Price:</strong> $
+            {totalPrice.toFixed(2)}
+          </p>
+        </div>
       </div>
       <div className="flex flex-row w-full sm:w-auto space-x-4 font-semibold mt-2">
         <Link
           href={`/rooms/${room.$id}`}
-          className="text-blue-700 bg-blue-100 border-2 border-blue-400 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-blue-200 flex items-center justify-center gap-1"
+          className="bg-blue-800 border-2 border-blue-500 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-blue-900 flex items-center justify-center gap-1"
         >
           <FaEye />
           View
@@ -98,7 +104,7 @@ const BookedRoomCard = ({ booking, index }) => {
             <button
               disabled
               name="cancel"
-              className="text-red-400 bg-red-100 border-2 border-red-300 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center flex items-center justify-center gap-1 relative group"
+              className="text-red-400 border-2 border-red-400 px-4 py-2 rounded-md mb-2 sm:mb-0 w-full sm:w-auto text-center flex items-center justify-center gap-1 relative group cursor-not-allowed"
             >
               <FcCancel />
               Cancel
