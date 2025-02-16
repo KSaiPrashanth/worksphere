@@ -23,7 +23,7 @@ const page = async ({ params }) => {
 
   const imageSrc = room.image ? imageUrl : "/images/no-image.png";
 
-  const location = room.address;
+  const location = room.location + ", " + room.address;
   const encodedLocation = encodeURIComponent(location);
   const mapUrl = `https://google.com/maps?q=${encodedLocation}`;
 
@@ -70,6 +70,8 @@ const page = async ({ params }) => {
               </li>
               <li>
                 <span className="font-semibold text-gray-100">Address: </span>
+                {room.location}
+                {", "}
                 {room.address}
               </li>
 
