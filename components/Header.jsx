@@ -49,7 +49,7 @@ const Header = () => {
                   className="h-12 w-12"
                   src={logo}
                   height={80}
-                  alt="WorkSphere"
+                  alt="WorkSphere Logo"
                   draggable="false"
                   priority={true}
                 />

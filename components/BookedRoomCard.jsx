@@ -66,9 +66,9 @@ const BookedRoomCard = ({ booking, index }) => {
   return (
     <div className="border border-gray-400 shadow-sm rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
       <div className="space-y-1">
-        <h4 className="text-2xl font-semibold">
+        <h2 className="text-2xl font-semibold">
           {index}. {room.name}
-        </h4>
+        </h2>
         <div className="ml-5 text-gray-400">
           <p className="text-sm">
             <strong> Booking Id:</strong>{" "}

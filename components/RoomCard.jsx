@@ -24,7 +24,7 @@ const RoomCard = ({ room }) => {
             className="w-full sm:w-2/5 sm:h-auto mb-3 sm:mb-0 object-cover rounded-lg"
           />
           <div className="space-y-1 flex flex-col justify-around pr-1">
-            <h4 className="text-2xl font-bold h-">{room.name}</h4>
+            <h2 className="text-2xl font-bold h-">{room.name}</h2>
             <div className="space-y-4">
               <p className="text-md text-gray-400">{room.description}</p>
               <p className="text-md text-gray-300">

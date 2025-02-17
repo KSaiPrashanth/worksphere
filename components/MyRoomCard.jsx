@@ -6,9 +6,9 @@ const MyRoomCard = ({ room, index }) => {
   return (
     <div className="border border-gray-400 shadow-md shadow-gray-800 rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
       <div className="flex flex-col gap-1">
-        <h4 className="text-2xl font-semibold">
+        <h2 className="text-2xl font-semibold">
           {index}. {room.name}
-        </h4>
+        </h2>
         <p className="text-sm text-gray-400 pl-5">
           <strong>Room Id:</strong> {room.$id}
         </p>
