@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const pages = ["/", "/rooms", "/add-room", "/my-rooms", "/bookings"];
+const pages = ["/", "/rooms", "/rooms/add", "/rooms/my", "/bookings"];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

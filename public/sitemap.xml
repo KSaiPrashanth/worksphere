@@ -3,35 +3,35 @@
   
         <url>
           <loc>https://bookworksphere.vercel.app/</loc>
-          <lastmod>2025-02-14T12:22:37.700Z</lastmod>
+          <lastmod>2025-02-17T15:01:58.313Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
           <loc>https://bookworksphere.vercel.app/rooms</loc>
-          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
+          <lastmod>2025-02-17T15:01:58.314Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.app/add-room</loc>
-          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/rooms/add</loc>
+          <lastmod>2025-02-17T15:01:58.314Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
-          <loc>https://bookworksphere.vercel.app/my-rooms</loc>
-          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
+          <loc>https://bookworksphere.vercel.app/rooms/my</loc>
+          <lastmod>2025-02-17T15:01:58.314Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
       
         <url>
           <loc>https://bookworksphere.vercel.app/bookings</loc>
-          <lastmod>2025-02-14T12:22:37.701Z</lastmod>
+          <lastmod>2025-02-17T15:01:58.314Z</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
         </url>
