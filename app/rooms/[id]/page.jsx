@@ -59,6 +59,10 @@ const page = async ({ params }) => {
                 sq ft
               </li>
               <li>
+                <span className="font-semibold text-gray-100">Capacity: </span>{" "}
+                {room.capacity}
+              </li>
+              <li>
                 <span className="font-semibold text-gray-100">
                   Availability:{" "}
                 </span>
@@ -67,6 +71,10 @@ const page = async ({ params }) => {
               <li>
                 <span className="font-semibold text-gray-100">Price: </span>$
                 {room.price_per_hour}/hour
+              </li>
+              <li>
+                <span className="font-semibold text-gray-100">Amenities: </span>
+                {room.amenities}
               </li>
               <li>
                 <span className="font-semibold text-gray-100">Address: </span>
